@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: .1em .1em 0 rgb(221, 221, 221);
+    font-weight: 700;
+    font-size: 44px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#color-div{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    transition: 200ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.blur-effect{
+    backdrop-filter: blur(15px);
+    scale: 0.98;
+}
+
+@media screen and (max-width:650px) {
+    #color-div{
+        width: 200px;
+        height: 150px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    section{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    section{
+        gap: 10px;
+    }
+    #color-div{
+        width: 100px;
+        height: 150px;
+    }
+    #color-div {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:340px) {
+    #color-div{
+        width: 90px;
+        height: 120px;
+    }
+}
